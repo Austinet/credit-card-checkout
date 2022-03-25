@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/bg-image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 1.18rem;
+}
+
+#checkout {
+    display: flex;
+    width: 680px;
+}
+
+.checkout-image-container {
+    padding-top: 1.7rem;
+    width: 50%;
+    background-color: #fff;
+}
+.checkout-image-area {
+    width: 82%;
+    margin-left: auto;
+    position: relative;
+}
+.checkout-image-container h2 {
+    color: #69321a;
+    margin-bottom: 1.5rem;
+}
+.checkout-image-container p {
+    width: 80px;
+    height: 80px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #4585f7;
+    border: 2px solid #4585f7;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 57%;
+    top: -2rem;
+}
+.dollar {
+    font-size: 1.1rem;
+}
+.shape {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 44%;
+    right: -0.6rem;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+
+.checkout-details-container {
+    padding: 1.7rem 2.5rem 0;
+    /* background-color: #013c4b; */
+    background-color: #130f22;
+    color: #fff;
+    width: 50%;
+}
+.checkout-details-container h1 {
+    color: #4585f7;
+    margin-bottom: 3.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.checkout-details-container h2 {
+    color:  #888;
+    margin-bottom: 2.3rem;
+}
+.checkout-details-container ul {
+    list-style: none;
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+label {
+    display: block;
+    font-weight: 400;
+    color: #ccc;
+    font-weight: 500;
+}
+input[type="text"] {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #130f22;
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0.3rem 0 2.2rem;
+}
+
+
+@media(max-width:700px) {
+    #checkout {
+        width: 95%;
+        flex-direction: column;
+        margin: auto;
+    }
+    .checkout-details-container,
+    .checkout-image-container {
+        width: 100%;
+    }
+    .checkout-image-area {
+        width: 100%;
+        text-align: center;
+    }
+    .shape {
+        top: 97.5%;
+        right: 50%;
+    }
+}
