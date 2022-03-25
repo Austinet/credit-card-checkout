@@ -1,4 +1,3 @@
-# credit-card-checkout
 # Developer Students' Club - Credit Card Checkout
 
 ## Table of contents
